@@ -15,7 +15,7 @@ STEPS_PER_UPDATE = 4
 STEPS_PER_TARGET_UPDATE = STEPS_PER_UPDATE * 1000
 BATCH_SIZE = 128
 LEARNING_RATE = 5e-4
-BUFFER_SIZE = int(1e5)  # replay buffer size
+BUFFER_SIZE = int(1e5)  # replay buffer size 
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 """
@@ -185,7 +185,8 @@ class DQN:
         self.steps += 1
 
     def save(self):
-        torch.save(self.model, "agent.pkl")
+        # torch.save(self.model, "agent.pkl")
+        torch.save(self.model.state_dict(), "agent.pkl")
 
 
 def evaluate_policy(agent, episodes=5):
