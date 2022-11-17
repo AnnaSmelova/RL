@@ -6,5 +6,8 @@
 Оценка выставляется от 1 до 10 и линейно зависит за набранный агентом счет в среднем за 50 эпизодов. Максимальный счет - 1200, минимальный счет - 200.
 Обратите внимание: для выполнения данной работы вам потребуется установить библиотеку PyBullet.
 
-#### Результат:
-![Result](https://github.com/AnnaSmelova/RL/blob/main/hw02_walker2d/video/Walker2DBulletEnv-v0_best.gif)
+#### До обучения:
+![Before](https://github.com/AnnaSmelova/RL/blob/main/hw02_walker2d/video/Walker2DBulletEnv-v0_first.gif)
+
+#### После обучения:
+![After](https://github.com/AnnaSmelova/RL/blob/main/hw02_walker2d/video/Walker2DBulletEnv-v0_best.gif)
